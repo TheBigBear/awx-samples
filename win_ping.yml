@@ -2,4 +2,4 @@
   hosts: all
   tasks:
     - name: win_ping test
-      win_ping:
+      win_ping: 
