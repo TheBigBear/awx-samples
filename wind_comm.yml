@@ -1,6 +1,6 @@
 ---
  - name: Ansible win_command module example  
-   hosts: windows # host group to run the module on       
+   hosts: all # host group to run the module on       
    tasks: 
    -  name: run an executable command on a remote Windows system
       win_command: netstat -e # win_command is a Windows module. 
