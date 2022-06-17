@@ -1,7 +1,7 @@
 ---
 - name: Install all security, critical, and rollup updates with automatic reboots
   hosts: all
-  ansible.windows.win_updates:
+  win_updates:
     category_names:
     - SecurityUpdates
       - CriticalUpdates
