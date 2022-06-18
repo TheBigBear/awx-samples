@@ -1,6 +1,6 @@
 ---
 - name: Install updates on fileserver
-  hosts: fileserver
+  hosts: all
   strategy: free
   tasks:
     - name: search and install updates
