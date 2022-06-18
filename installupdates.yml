@@ -8,6 +8,8 @@
         category_names:
           - CriticalUpdates
           - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
         reboot: yes
         reboot_timeout: 600
         log_path: c:\windows\logs\ansible_update_log.txt
