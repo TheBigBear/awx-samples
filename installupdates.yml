@@ -4,7 +4,7 @@
   strategy: free
   tasks:
     - name: search and install updates
-      win_updates:
+      ansible.windows.win_updates:
         category_names:
           - CriticalUpdates
           - SecurityUpdates
