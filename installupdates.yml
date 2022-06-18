@@ -1,5 +1,5 @@
 ---
-- name: Install updates on fileserver
+- name: Install windows updates
   hosts: all
   strategy: free
   tasks:
