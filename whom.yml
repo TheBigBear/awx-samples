@@ -1,0 +1,3 @@
+- Check my user name
+  ansible.windows.win_whoami:
+  become: yes
