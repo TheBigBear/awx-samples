@@ -1,3 +1,4 @@
 - Check my user name
+  hosts: all
   ansible.windows.win_whoami:
   become: yes
