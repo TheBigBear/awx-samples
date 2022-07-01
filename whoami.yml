@@ -3,5 +3,6 @@
   hosts: all
   gather_facts: false
   tasks:
-    ansible.windows.win_whoami:
-    become: yes
+    - name: checking my user name and rights
+      ansible.windows.win_whoami:
+      become: yes
