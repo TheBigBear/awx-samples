@@ -2,5 +2,6 @@
 - name: Check my user name
   hosts: all
   gather_facts: false
-  win_whoami:
-  become: yes
+  tasks:
+    ansible.windows.win_whoami:
+    become: yes
