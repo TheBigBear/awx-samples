@@ -7,7 +7,7 @@
         echo %CD%
         net stop salt-minion
         ping -n 20 localhost -4 > empty
-        & c:\Downloads\Salt-Minion-3004.2-1-Py3-AMD64-Setup.exe /S /master=salt.ict.om.org /minion-name=$env:COMPUTERNAME /move-config
+        & c:\Downloads\Salt-Minion-3004.2-1-Py3-AMD64-Setup.exe /S /master=salt.example.com /minion-name=$env:COMPUTERNAME /move-config
         ping -n 60 localhost -4 > empty
         net start salt-minion
 
