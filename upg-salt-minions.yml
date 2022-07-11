@@ -1,4 +1,5 @@
 ---
+# your own salt master needs to be entered below - else your minions will report to the master at salt.example.com
 - name: Upgrade Salt Minions
   hosts: all
   tasks:
