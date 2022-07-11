@@ -4,12 +4,12 @@
   hosts: all
   tasks:
     - win_shell: |
-      args: 
-        executeable: cmd
       cd c:\Downloads
       echo %CD%
       echo $env:CD
       echo c:\Downloads\Salt-Minion-3004.2-1-Py3-AMD64-Setup.exe /S /master=salt.example.com /minion-name=%COMPUTERNAME% /move-config
       echo c:\Downloads\Salt-Minion-3004.2-1-Py3-AMD64-Setup.exe /S /master=salt.example.com /minion-name=$env:COMPUTERNAME /move-config
+        args: 
+          executeable: cmd
 
 ...
