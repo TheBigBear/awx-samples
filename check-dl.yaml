@@ -1,0 +1,10 @@
+---
+- name: Check C: Downloads directory
+  hosts: all
+  tasks:
+      # Run a command under a non-Powershell interpreter (cmd in this case)
+      - win_shell: echo %COMPUTERNAME% %HOMEDIR% %CD% chdir=c:\Downloads
+        args:
+          executable: cmd
+        register: homedir_out
+...
