@@ -1,0 +1,12 @@
+---
+# your own salt master needs to be entered below - else your minions will report to the master at salt.example.com
+- name: Testing CMD Shell
+  hosts: all
+  tasks:
+    - win_shell: |
+        cd c:\Downloads
+        echo %CD%
+        echo c:\Downloads\Salt-Minion-3004.2-1-Py3-AMD64-Setup.exe /S /master=salt.example.com /minion-name=%COMPUTERNAME% /move-config
+      args: 
+        executeable: cmd
+...
