@@ -2,7 +2,7 @@
 - name: Upgrade Salt Minions
   hosts: all
   tasks:
-    - win_shell: |
+    win_shell: |
       cd c:\Downloads
       echo %CD%
       echo net stop salt-minion
