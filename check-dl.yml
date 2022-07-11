@@ -6,5 +6,5 @@
       - win_shell: echo %COMPUTERNAME% %HOMEDIR% %CD% chdir=c:\Downloads
         args:
           executable: cmd
-        register: homedir_out
+        #register: homedir_out
 ...
