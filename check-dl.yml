@@ -1,5 +1,5 @@
 ---
-- name: Check C: Downloads directory
+- name: Check C Downloads directory
   hosts: all
   tasks:
       # Run a command under a non-Powershell interpreter (cmd in this case)
