@@ -1,0 +1,7 @@
+---
+- name: Un-Install git
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall git -y 
+...

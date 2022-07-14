@@ -1,0 +1,7 @@
+---
+- name: Install git
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install git -y 
+...
