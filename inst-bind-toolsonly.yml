@@ -1,0 +1,7 @@
+---
+- name: Install bind-toolsonly
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install bind-toolsonly -y 
+...

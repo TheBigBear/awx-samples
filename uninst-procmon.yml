@@ -1,0 +1,7 @@
+---
+- name: Un-install procmon
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall procmon -y 
+...

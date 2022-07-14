@@ -1,0 +1,7 @@
+---
+- name: Install less
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install less -y 
+...

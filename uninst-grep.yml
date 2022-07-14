@@ -1,0 +1,7 @@
+---
+- name: Un-install grep
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall grep -y 
+...

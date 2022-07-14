@@ -1,0 +1,7 @@
+---
+- name: Un-install curl
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall curl -y 
+...

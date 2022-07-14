@@ -1,0 +1,7 @@
+---
+- name: Un-install windirstat
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall windirstat -y 
+...

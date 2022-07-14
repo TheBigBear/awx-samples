@@ -1,0 +1,7 @@
+---
+- name: Un-install 7zip
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall 7zip -y 
+...

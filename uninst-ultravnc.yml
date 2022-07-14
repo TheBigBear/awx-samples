@@ -1,0 +1,7 @@
+---
+- name: Un-install ultravnc
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall ultravnc -y 
+...

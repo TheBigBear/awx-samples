@@ -1,0 +1,7 @@
+---
+- name: Install baretail
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install baretail -y 
+...

@@ -1,0 +1,7 @@
+---
+- name: Un-install baretail
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall baretail -y 
+...

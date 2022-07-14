@@ -1,0 +1,7 @@
+---
+- name: Install magic-wormhole
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install magic-wormhole -y 
+...

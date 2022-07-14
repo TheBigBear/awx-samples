@@ -1,0 +1,7 @@
+---
+- name: Un-install tcpview
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall tcpview -y 
+...

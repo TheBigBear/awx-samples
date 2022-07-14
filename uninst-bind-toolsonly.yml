@@ -1,0 +1,7 @@
+---
+- name: Un-install bind-toolsonly
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall bind-toolsonly -y 
+...

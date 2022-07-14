@@ -1,0 +1,7 @@
+---
+- name: Install nircmd
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install nircmd -y 
+...

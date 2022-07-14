@@ -1,0 +1,7 @@
+---
+- name: Install curl
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install curl -y 
+...

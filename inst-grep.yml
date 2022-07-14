@@ -1,0 +1,7 @@
+---
+- name: Install grep
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install grep -y 
+...

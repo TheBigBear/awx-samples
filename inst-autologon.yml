@@ -1,0 +1,7 @@
+---
+- name: Install AutoLogon
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install autologon -y 
+...

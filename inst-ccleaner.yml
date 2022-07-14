@@ -1,0 +1,7 @@
+---
+- name: Install ccleaner
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install ccleaner -y 
+...

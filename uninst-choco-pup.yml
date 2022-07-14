@@ -1,0 +1,17 @@
+---
+- name: Un-install Choco PUP
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall autologon -y
+        choco uninstall baretail -y
+        choco uninstall ccleaner -y
+        choco uninstall curl -y
+        choco uninstall nircmd -y
+        choco uninstall procmon -y
+        choco uninstall pstools -y
+        choco uninstall tcpview -y
+        choco uninstall ultravnc -y
+        choco uninstall vim -y
+        choco uninstall wget -y
+...

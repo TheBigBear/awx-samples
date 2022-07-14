@@ -1,0 +1,14 @@
+---
+- name: Install Choco Default 
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install 7zip -y
+        choco install bind-toolsonly -y
+        choco install grep -y
+        choco install less -y
+        choco install magic-wormhole -y
+        choco install notepadplusplus -y
+        choco install which -y
+        choco install windirstat -y
+...

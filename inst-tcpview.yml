@@ -1,0 +1,7 @@
+---
+- name: Install tcpview
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install tcpview -y 
+...

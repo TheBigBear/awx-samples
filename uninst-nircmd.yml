@@ -1,0 +1,7 @@
+---
+- name: Un-install nircmd
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall nircmd -y 
+...

@@ -1,0 +1,7 @@
+---
+- name: Un-install winmtr-redux
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall winmtr-redux -y 
+...

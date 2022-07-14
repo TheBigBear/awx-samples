@@ -1,0 +1,7 @@
+---
+- name: Install wget
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install wget -y 
+...

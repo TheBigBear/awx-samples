@@ -1,0 +1,7 @@
+---
+- name: Install winmtr-redux
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install winmtr-redux -y 
+...

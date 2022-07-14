@@ -1,0 +1,7 @@
+---
+- name: Un-install pstools
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall pstools -y 
+...

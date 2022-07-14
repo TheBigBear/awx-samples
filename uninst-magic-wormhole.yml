@@ -1,0 +1,7 @@
+---
+- name: Un-install magic-wormhole
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall magic-wormhole -y 
+...

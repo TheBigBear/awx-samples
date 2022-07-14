@@ -1,0 +1,7 @@
+---
+- name: Un-install which
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall which -y 
+...
