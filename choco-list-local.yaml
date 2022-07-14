@@ -1,0 +1,7 @@
+---
+- name: Un-install TeamViewer
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco list --local | sort  
+...
