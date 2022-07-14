@@ -5,6 +5,8 @@
     - win_shell: |
         choco install 7zip -y
         choco install bind-toolsonly -y
+        choco install file -y
+        choco install dos2unix -y        
         choco install grep -y
         choco install less -y
         choco install magic-wormhole -y
