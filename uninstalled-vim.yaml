@@ -1,0 +1,8 @@
+---
+# your own salt master needs to be entered below - else your minions will report to the master at salt.example.com
+- name: Un-install TeamViewer
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco uninstall vim -y 
+...
