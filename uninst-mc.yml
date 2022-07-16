@@ -1,0 +1,7 @@
+---
+- name: Un-Install mc
+  hosts: all
+  tasks:
+    - win_shell: |
+        choco install mc -y 
+...
